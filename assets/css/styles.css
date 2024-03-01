@@ -901,6 +901,10 @@ button {
   border-radius: 20px;
 }
 
+.pricing-item__active {
+  box-shadow: 0 20px 44px rgba(195, 108, 22, 0.06);
+}
+
 .pricing-item__type {
   font-size: 1.2rem;
   line-height: 1;
@@ -948,4 +952,119 @@ button {
 .pricing-item__item::before {
   content: url(../img/right-check.svg);
   margin-right: 14px;
+}
+
+/* Review */
+.review {
+  padding: 53px 0;
+}
+
+.review__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.review__control {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1.5px solid #ffd1c4;
+  background: transparent;
+  color: #ff5b2e;
+}
+
+.review__control:hover {
+  color: #fff;
+  background-color: #ff5b2e;
+  border-color: #ff5b2e;
+  cursor: pointer;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  column-gap: 115px;
+}
+
+.review-item__media {
+  width: 553px;
+  position: relative;
+  flex-shrink: 0;
+  width: 274px;
+  margin-top: -52px;
+  border-radius: 137px;
+}
+
+.review-item__media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 82%;
+  border-radius: inherit;
+  background-color: #ffda54;
+}
+
+.review-item__img {
+  position: relative;
+  width: 100%;
+  display: block;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.review-item__quote {
+  margin-top: 24px;
+  font-size: 1.8rem;
+  line-height: 1.56;
+  color: #000;
+}
+
+.review-item__author {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  font-family: Sora, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #282828;
+}
+
+.review-item__author::before {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  margin-right: 8px;
+  border-radius: 1px;
+  background: #000;
+}
+
+.review__dots {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.review__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid #ff5b2e;
+}
+
+.review__dot:hover {
+  background: #ff5b2e;
+  cursor: pointer;
+}
+
+.review__dot-active {
+  width: 24px;
+  background: #ff5b2e;
 }
